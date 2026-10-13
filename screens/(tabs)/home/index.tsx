@@ -132,7 +132,7 @@ export default function ProfilePage() {
             <View className="mt-1 flex-row items-center gap-2">
               <Building2 size={16} color="#64748B" />
               <Text className="text-sm text-muted-foreground">
-                SpendWise account
+                Ahead account
               </Text>
             </View>
           </View>
@@ -190,7 +190,7 @@ export default function ProfilePage() {
         </Card>
 
         <Text className="mt-5 text-center text-xs text-muted-foreground">
-          SpendWise v1.0.0
+          Ahead v1.0.0
         </Text>
       </View>
     </SafeAreaView>

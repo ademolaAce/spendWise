@@ -1,5 +1,5 @@
 {
-  "name": "spendWise",
+  "name": "Ahead Portal",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -10,10 +10,12 @@
     "clean": "rm -rf .expo node_modules"
   },
   "dependencies": {
+    "@expo/ui": "~57.0.23",
     "@expo/vector-icons": "^15.0.2",
     "@react-navigation/elements": "^2.9.44",
     "@react-navigation/native": "^7.5.0",
     "@rn-primitives/avatar": "^1.5.2",
+    "@rn-primitives/dropdown-menu": "^1.5.2",
     "@rn-primitives/label": "^1.5.2",
     "@rn-primitives/popover": "^1.5.2",
     "@rn-primitives/portal": "~1.4.0",
@@ -23,6 +25,7 @@
     "clsx": "^2.1.1",
     "expo": "~57.0.27",
     "expo-constants": "~57.0.20",
+    "expo-dev-client": "~57.0.20",
     "expo-linking": "~57.0.12",
     "expo-router": "~57.0.25",
     "expo-secure-store": "~57.0.4",

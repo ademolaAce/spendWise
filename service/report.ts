@@ -30,3 +30,28 @@ export async function getallReport() {
 
   return response.json();
 }
+
+export async function getallReportById(id: string | number) {
+  const authKey = await SecureStore.getItemAsync('auth_key');
+
+  const result = await fetch(`${API}/reports/${id}`, {
+    method: 'GET',
+    headers: {
+      Authorization: `Basic ${authKey}`,
+      'Content-Type': 'application/json',
+      'Fineract-Platform-TenantId': 'default',
+    },
+  });
+
+  if (!result.ok) {
+    const errorText = await result.text();
+
+    throw new Error(
+      `Failed to fetch reports (${result.status}): ${errorText}`
+    );
+  }
+
+  console.log('Response from getallReport:', result);
+
+  return result.json();
+}
