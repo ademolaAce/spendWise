@@ -5,7 +5,7 @@ import { ThemeProvider } from 'expo-router/react-navigation';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'nativewind';
-import { PortalHost } from '@rn-primitives/portal';
+import React from 'react';
 
 export default function RootLayout() {
   const { colorScheme } = useColorScheme();
@@ -42,13 +42,12 @@ export default function RootLayout() {
           name="report/[id]"
           options={{
             headerTitle: 'Report Details',
-            headerShown: true,
+            headerShown: false,
             headerBackTitle: 'Back',
           }}
         />
       </Stack>
 
-      <PortalHost />
     </ThemeProvider>
   );
 }
